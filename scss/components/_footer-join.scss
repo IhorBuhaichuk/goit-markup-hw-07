@@ -1,10 +1,27 @@
 .footer-join {
-  margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-weight: 700;
+
+  @media screen and (min-width: 480px) {}
+  
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-left: 70px;
+  }
 }
 .footer-join__txt {
   color: #ffffff;
@@ -35,4 +52,9 @@
 &__link:focus {
 background-color: var(--acent-txt-cl);
 }
+}
+
+.footer-join-socials__link:hover,
+.footer-join-socials__link:focus {
+  background-color: var(--acent-txt-cl);
 }
